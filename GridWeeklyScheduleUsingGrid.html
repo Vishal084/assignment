@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .main{
+            width: 80%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            grid-row-gap: 10px; /* Added row gap */
+            grid-column-gap: 10px; /* Added column gap */
+            padding: 20px;
+            
+        }
+        
+        .main>div{
+         display: flex;
+         align-items: center;
+         justify-content: center;
+
+            
+            height: 31px;
+            width: 150px;
+            /* border: 2px solid black; */
+            border-radius: 21px;
+            
+           
+        }
+        .main>div:nth-child(6n+1){
+          background-color: rgb(180, 180, 235);
+        }
+
+        .main>div:nth-child(6n+2),.main>div:nth-child(6n+4),.main>div:nth-child(6n+6){
+            background-color: aquamarine;
+        }
+        .main>div:nth-child(6n+3),.main>div:nth-child(6n+5){
+            background-color: rgba(228, 225, 91, 0.896);
+        }
+        .main>div:nth-child(1){
+           visibility: hidden;
+        }
+        h1{
+          
+            text-align: center;
+            margin: 50px;
+
+        }
+        #last{
+            background-color: rgb(180, 180, 235);
+            border-radius: 21px;
+            height: 31px;
+            
+            max-width: 76%;
+            margin-left: 166px;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Weekly schedule</h1>
+    <div class="main">
+        <div></div>
+        <div>Monday</div>
+        <div>Tuesday</div>
+        <div>Wednesday</div>
+        <div>Thursday</div>
+        <div>Friday</div>
+        <div>08:00</div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+        <div>09:00</div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+        <div>10:00</div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+        <div>11:00</div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+        <div>12:00</div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+        <div>13:00</div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+        <div>14:00</div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+        <div>15:00</div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+        <div>16:00</div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div id="last">Note:</div>
+</body>
+</html>
